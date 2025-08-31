@@ -1,0 +1,837 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/cwnu1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    position: relative;
+}
+.hero-description{
+    font-size: 1.5rem;
+}
+.logo a > img{
+    width: 100%;
+    height: 160px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    padding: 12px 34px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Mobile Menu Icon */
+nav .fa {
+    display: none;
+}
+
+/*----Courses Section----*/
+.courses{
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+.course-intro{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    color: #666;
+}
+.courses .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.courses h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+.course-description{
+    font-size: 1.2rem;
+    color: #666;
+}
+.course-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.course-item{
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.course-item h3{
+    margin-bottom: 15px;
+    color: #f44336;
+}
+.course-item p{
+    color: #000001;
+}
+.course-item:hover{
+    box-shadow: 0 2px 10px rgba(244, 67, 54, 0.5);
+    transform: scale(1.09);
+}
+/*---- Courses Section END----*/
+
+/*---- Campus Section ----*/
+.campus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-description{
+    font-size: 1.5rem;
+    color: #666;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.campus-col img{
+    width: 100%;
+    display: block; 
+}
+.layer{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    transform: translate(-50%, 50%);
+}
+/*---- Campus Section END ----*/
+
+/*---- Facilities Section ----*/
+.main-title{
+    text-align: center;
+    margin-top: 50px;
+}
+.main-description{
+    text-align: center;
+    margin-top: 5px;
+   font-size: 1.5rem;
+    color: #666;
+}
+.our-facilities-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.facilities-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.facilities-description{
+    font-size: 1.5rem;
+    color: #666;
+    margin-left: 10px;
+    text-align: center;
+}
+.facilities-col{
+    flex-basis: 31%;
+    margin-bottom: 30px;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out ;
+}
+.facilities-col img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-left: 15px;
+    text-align: left;
+}
+/*---- Facilities Section END ----*/
+
+/*----testimonials----*/
+.testimonial-container{
+    display: flex;
+     gap: 50px;
+     margin-bottom: 50px;
+     width: 100%;
+     margin: auto;
+}
+.img-container img{
+    width: 100%;
+   border-radius: 20px;
+}
+.testimonial-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.5s;  
+}
+.testimonial-col:hover{
+    box-shadow: 0 2px 10px rgba(244, 67, 54, 0.5);
+    transform: scale(1.09);
+} 
+.testimonial-author{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500px;
+}
+.testimonial-description{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: #666;
+}
+/* Font Icons  */
+.font-icons{
+    text-align: center;
+    color: #f44336;
+}
+/*----testimonials END ----*/
+
+/*---- Call to Action Section ----*/
+.cta{
+    margin: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+     rgba(0, 0, 0, 0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta p{
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.cta .hero-btn{
+    display: inline-block;
+    padding: 12px 34px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.cta .hero-btn:hover{
+    background: #f44336;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*---- Call to Action Section END ----*/
+
+/*---- Footer Section ----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    color: #666;
+    font-size: 20px;
+}
+.icons .fa-brands{
+    margin: 0 13px;
+    color: #f44336;
+    cursor: pointer;
+    padding: 0;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+}
+.icons .fa-brands:hover{
+    color: #000;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+/*---- Footer Section END ----*/
+
+/*---- About Section ----*/
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col img{
+    transition: 0.3s ease-in-out ;
+}
+.about-col img:hover{
+    transform: scale(1.1);
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+    transition: 0.3s ease-in-out;
+
+}
+.red-btn:hover{
+    background: #f44336;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*---- About Section END ----*/
+
+/*----Blog section----*/
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0; 
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out ;
+}
+.blog-left img:hover{
+    transform: scale(1.05);
+}
+.blog-left h2{
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    color: #222;
+}
+.blog-left p{
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    padding-top: 10px;
+    text-align: left;
+}
+.blog-right{
+    flex-basis: 32%;
+    padding-left: 20px;
+    margin: auto;
+}
+.blog-right h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 7px 0;
+    background: #f44336;
+    text-align: center;
+    border-radius: 5px;
+}
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.blog-right div:last-child{
+    border-bottom: none;
+}
+.blog-right span{
+    font-size: 1rem;
+    color: #666;
+}
+.blog-right span:last-child{
+    font-weight: bold;
+    color: #f44336;
+}
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.comment-form button{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/*----Contact Us section ----*/
+
+.location{
+   width: 80%;
+   padding: 80px 0;
+   margin: auto;
+}
+.location iframe{
+   width: 100%;
+   height: 400px;
+}
+.Contact-Us {
+    width: 100%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin-right: 30px;
+    margin: 10px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col h5{
+   font-size: 20px;
+   margin-bottom: 5px;
+   color: #555;
+   font-weight: 600;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.join-us{
+    text-align: center;
+    margin: 20px 0;
+}
+.join-us h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/* ============ MEDIA QUERIES ============ */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .text-box h1 {
+        font-size: 48px;
+    }
+    
+    .course-item {
+        width: 45%;
+    }
+    
+    .facilities-col {
+        flex-basis: 48%;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .text-box h1 {
+        font-size: 36px;
+    }
+    
+    .text-box p {
+        font-size: 16px;
+    }
+    
+    .course-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .campus-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .facilities-col {
+        flex-basis: 100%;
+    }
+    
+    .testimonial-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .blog-content .row {
+        flex-direction: column;
+    }
+    
+    .blog-left, .blog-right {
+        flex-basis: 100%;
+        padding: 0;
+    }
+    
+    .blog-right {
+        margin-top: 30px;
+    }
+    
+    .about-col {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .contact-col {
+        flex-basis: 100%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    /* Header and Navigation */
+    .header {
+        height: 500px;
+    }
+    
+    .text-box h1 {
+        font-size: 28px;
+    }
+    
+    .hero-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+    
+    /* Navigation menu for mobile */
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    
+    .nav-links ul {
+        padding: 30px;
+    }
+    
+    .nav-links ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    /* General adjustments */
+    .sub-header h1 {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+    
+    .courses h2, .main-title {
+        font-size: 24px;
+    }
+    
+    .course-intro, .main-description, .campus-description {
+        font-size: 16px;
+    }
+    
+    .course-description, .facilities-description {
+        font-size: 14px;
+    }
+    
+    /* Facilities section */
+    .our-facilities-container {
+        flex-direction: column;
+    }
+    
+    /* Testimonials */
+    .testimonial-col {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .testimonial-author {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    .testimonial-description {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    
+    /* Call to action */
+    .cta h1 {
+        font-size: 24px;
+    }
+    
+    .cta p {
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .footer h1 {
+        font-size: 24px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+    }
+    
+    .icons .fa-brands {
+        font-size: 30px;
+        margin: 0 8px;
+    }
+    
+    /* About page */
+    .about-col h1 {
+        font-size: 22px;
+    }
+    
+    .about-col p {
+        font-size: 14px;
+    }
+    
+    /* Blog page */
+    .blog-left h2 {
+        font-size: 20px;
+    }
+    
+    .blog-left p {
+        font-size: 14px;
+    }
+    
+    .blog-right h3 {
+        font-size: 18px;
+    }
+    
+    /* Contact page */
+    .join-us h2 {
+        font-size: 24px;
+    }
+    
+    .contact-col h5 {
+        font-size: 16px;
+    }
+    
+    .location {
+        width: 95%;
+        padding: 40px 0;
+    }
+    
+    .location iframe {
+        height: 300px;
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 400px) {
+    .text-box h1 {
+        font-size: 24px;
+    }
+    
+    .logo a > img {
+        height: 120px;
+    }
+    
+    .hero-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .sub-header {
+        height: 40vh;
+    }
+    
+    .location iframe {
+        height: 250px;
+    }
+}
+/* Honeypot field styling */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+}
